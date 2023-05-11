@@ -1,49 +1,52 @@
 #include<stdio.h>
 
 int main() {
+	//
 	int a, b;
 	a = 10;
 	b = 3;
-	printf("a + b ´Â : %d \n", a + b);
-	printf("a - b ´Â : %d \n", a - b);
-	printf("a * b ´Â : %d \n", a * b);
-	printf("a / b ´Â : %d \n", a / b);
-	printf("a %% b ´Â : %d \n", a % b);// %ÇÏ³ª´Â %d¿Í È¥µ¿ °¡´ÉÇÏ±â ¶§¹®¿¡ %%»ç¿ë
-
+	printf("a + b ëŠ” : %d \n", a + b);
+	printf("a - b ëŠ” : %d \n", a - b);
+	printf("a * b ëŠ” : %d \n", a * b);
+	printf("a / b ëŠ” : %d \n", a / b);
+	printf("a %% b ëŠ” : %d \n", a % b);// %í•˜ë‚˜ëŠ” %dì™€ í˜¼ë™ ê°€ëŠ¥í•˜ê¸° ë•Œë¬¸ì— %%ì‚¬ìš©
+	
 	int c;
 	double d;
 	c = 10;
 	d = 3;
-	printf("c/d´Â : %f \n", c / d); //int¿Í double ¿¬»êÀº »ê¼úº¯È¯À¸·Î doubleÀÌ Ãâ·Â
-	printf("d/c´Â : %f \n", d / c);
+	printf("c/dëŠ” : %f \n", c / d); //intì™€ double ì—°ì‚°ì€ ì‚°ìˆ ë³€í™˜ìœ¼ë¡œ doubleì´ ì¶œë ¥
+	printf("d/cëŠ” : %f \n", d / c);
 
 	int e = 3;
 	e = e + 3;
-	printf("eÀÇ °ªÀº : %d \n", e);
+	printf("eì˜ ê°’ì€ : %d \n", e);
 
+	//
 	int a = 1, b = 1, c = 1, d = 1;
 	a = a + 1;
 	b += 1;
 	++c;
 	d++;
-	printf("a´Â : %d \n", a);
-	printf("b´Â : %d \n", b);
-	printf("c´Â : %d \n", c);
-	printf("d´Â : %d \n", d);
+	printf("aëŠ” : %d \n", a);
+	printf("bëŠ” : %d \n", b);
+	printf("cëŠ” : %d \n", c);
+	printf("dëŠ” : %d \n", d);
 
+	//
 	int a = 1;
 	printf("++a : %d \n", ++a);
-
+	//
 	a = 1;
-	printf("a++ : %d \n", a++); //Ãâ·ÂµÈ ÈÄ +1
+	printf("a++ : %d \n", a++); //ì¶œë ¥ëœ í›„ +1
 	printf("a : %d \n", a);
-
+	//
 	int a = 0xAF;//1010 1111
 	int b = 0xB5;//1011 0101
 	printf("%x \n", a & b);//10100101
 	printf("%x \n", a | b);//10111111
 	printf("%x \n", a ^ b);//00011010
-	printf("%x \n", ~a);//01010000 -> intÀÇ 32ºñÆ®¿¡¼­ ³ª¸ÓÁö 0ÀÌ ¸ðµÎ 1ÀÌ µÇ¾î ffffff·Î Ãâ·Â
+	printf("%x \n", ~a);//01010000 -> intì˜ 32ë¹„íŠ¸ì—ì„œ ë‚˜ë¨¸ì§€ 0ì´ ëª¨ë‘ 1ì´ ë˜ì–´ ffffffë¡œ ì¶œë ¥
 	printf("%x \n", a << 2);// 00101011 1100
 	printf("%x \n", b >> 3);//00010110 (101)
 
